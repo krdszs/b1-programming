@@ -33,14 +33,14 @@ for password in passwords:
     if not has_lower:
         problems.append("No lowercase letters")
     if not has_digit:
-        problems.append("No digits letters")
+        problems.append("No digits")
 
     if len(problems) == 0:
         compliant += 1
         print(f"PASS: {password} - Meets all requirements")
     else:
         non_compliant += 1
-        text = ",".join(problems)
+        text = ", ".join(problems)
         print(f"FAIL: {password} - {text}")
 
-print(f"Summary: {str(compliant)} compliant, {str(non_compliant)} non-compliant")
+print(f"Summary: {compliant} compliant, {non_compliant} non-compliant")
