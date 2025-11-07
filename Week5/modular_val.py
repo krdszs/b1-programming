@@ -27,7 +27,18 @@ def validate_password(password):
     valid["is_valid"] = all(valid.values())
     return valid
 
-def user_interface(password):
+def user_interface():
+    print("PASSWORD VALIDATOR\n"
+        "\nPassword requirements:\n"
+        " - Minimum 8 characters\n"
+        " - At least one uppercase letter\n"
+        " - At least one lowercase letter\n"
+        " - At least one digit\n"
+        " - At least one special character (!@#$%^&* etc.)\n"
+    )
+
+    password = str(input("Enter password: "))
+    
     valid = validate_password(password)
 
     print("")
@@ -66,17 +77,6 @@ def user_interface(password):
     if not valid["has_special"]:
         print(f"Hint: Try adding a special character like {random.choice(string.punctuation)}")
 
-print("PASSWORD VALIDATOR\n"
-    "\nPassword requirements:\n"
-    " - Minimum 8 characters\n"
-    " - At least one uppercase letter\n"
-    " - At least one lowercase letter\n"
-    " - At least one digit\n"
-    " - At least one special character (!@#$%^&* etc.)\n"
-)
-
-password = str(input("Enter password: "))
-
 print()
 
-user_interface(password)
+user_interface()
