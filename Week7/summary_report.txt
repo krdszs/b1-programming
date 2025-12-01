@@ -1,0 +1,25 @@
+======================================================================
+SERVER LOG ANALYSIS SUMMARY
+======================================================================
+
+TRAFFOC STATISTICS
+----------------------------------------------------------------------
+Total Requests: 5
+Unque visitors: 4
+
+HTTP Methods:
+ GET: 3
+ POST: 2
+
+Most Requested URLs:
+ /login: 2 requets
+ /index.html: 1 requets
+ /admin: 1 requets
+ /api/data: 1 requets
+
+Status Code Distribution:
+ 200: 2
+ 401: 2
+ 403: 1
+
+======================================================================
