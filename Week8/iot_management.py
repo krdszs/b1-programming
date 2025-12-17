@@ -104,11 +104,10 @@ class DeviceManager:
             report.append(info)
         return report
 
-# Example user class
 class User:
-    def __init__(self, username, is_admin=False):
+    def __init__(self, username, admin=False):
         self.username = username
-        self.is_admin = is_admin
+        self.admin = admin
     
     def get_username(self):
         return self.username
