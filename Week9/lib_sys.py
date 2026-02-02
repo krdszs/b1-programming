@@ -10,10 +10,12 @@ class Book:
 class Library:
     def __init__(self, name):
         self.name = name
-        self.books = [] # Library HAS books (composition)
+        self.books = []
+
     def add_book(self, book):
         self.books.append(book)
         return f"Added: {book.display_info()}"
+    
     def remove_book(self, title):
         for book in self.books:
             if book.title.lower() == title.lower():

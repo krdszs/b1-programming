@@ -22,7 +22,7 @@ class Teacher(Person):
     def introduce(self):
         return f"Hello, I'm {self.name}, a teacher. I teach {self.subject} and I'm {self.age} years old."
 
-# Testing the classes
+# Testing
 student = Student("Alice", 16, "S001")
 teacher = Teacher("Mr. Smith", 35, "Mathematics")
 
